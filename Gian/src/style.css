@@ -87,31 +87,11 @@ form button {
   opacity: 0;
 }
 
-select {
-  margin: 1rem;
-  position: relative;
-  overflow: hidden;
-  border-radius: 50px;
-  width: 10rem;
-  height: 3.2rem; 
-  cursor: pointer;
-  padding: 1rem;
-}
-
-.select::after {
-  content: "\25BC";
-  position: absolute;
-  background: rgb(195, 255, 252);
-  top: 0;
-  right: 0;
-  padding: 1rem;
-  pointer-events: none;
-  transition: all 0.3s ease; 
-}
-
-.select:hover::after {
-  background: white;
-  color: rgb(195, 255, 252);
+.yoshi {
+  width: 200px; 
+  height: auto; 
+  display: block; 
+  margin: 0 auto; 
 }
 
 .delete-btn {
@@ -122,8 +102,7 @@ select {
   padding: 5px 10px;
   cursor: pointer;
   transition: background-color 0.3s ease; 
-
-margin-right: 10px;
+  margin-right: 10px;
 }
 
 .delete-btn:hover {
