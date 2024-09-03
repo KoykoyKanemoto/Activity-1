@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(16, 199, 199);
+  font-family: fantasy;
+  min-height: 100vh;
+}
+
+header {
+  font-size: 1.5rem;
+}
+
+header,
+form {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form input,
+form button {
+  padding: 0.5rem;
+  padding-left: 1rem;
+  font-size: 1.8rem;
+  border: 2px solid black;
+  background: white;
+  border-radius: 2rem;
+}
+
+form button {
+  font-family: fantasy;
+  background-color: rgb(195, 255, 252);
+  cursor: pointer;
+  transition: all 0.3s ease; 
+  margin-left: 0.5rem;
+}
+
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-list {
+  min-width: 30%;
+  list-style: none;
+}
+
+.todo {
+  margin: 0.5rem;
+  padding-left: 0.5rem;
+  background: white;
+  color: black;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s;
+  border-radius: 2rem;
+}
+
+.done-btn {
+  background-color: rgb(195, 255, 252);
+}
+
+.todo_item {
+  padding: 0rem 0.5rem;
+}
+
+.fa-trash,
+.fa-check-circle {
+  pointer-events: none;
+}
+
+.done {
+  opacity: 0.5; 
+  background-color: #d3ffd3;
+}
+
+.slide {
+  transform: translateX(10rem);
+  opacity: 0;
+}
+
+select {
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50px;
+  width: 10rem;
+  height: 3.2rem; 
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  background: rgb(195, 255, 252);
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  pointer-events: none;
+  transition: all 0.3s ease; 
+}
+
+.select:hover::after {
+  background: white;
+  color: rgb(195, 255, 252);
+}
+
+.delete-btn {
+  background-color: #ff4d4d; 
+  color: white; 
+  border: none; 
+  border-radius: 5px; 
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+
+margin-right: 10px;
+}
+
+.delete-btn:hover {
+  background-color: #ff1a1a; 
+}
+
+.done-btn {
+  background-color: #4caf50; 
+  color: white; 
+  border: none; 
+  border-radius: 10px; 
+  padding: 4px 15px; 
+  font-size: 1rem; 
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; 
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.done-btn:hover {
+  background-color: #45a049; 
+  transform: scale(1.05); 
+}
+
+.done-btn:focus {
+  outline: none; 
+}
+
