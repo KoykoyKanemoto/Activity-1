@@ -8,10 +8,11 @@ body {
   background-color: rgb(16, 199, 199);
   font-family: fantasy;
   min-height: 100vh;
+  font-size: 12px;
 }
 
 header {
-  font-size: 1.5rem;
+  font-size: 3rem;
 }
 
 header,
@@ -47,8 +48,9 @@ form button {
 }
 
 .todo-list {
-  min-width: 30%;
+  min-width: 75%;
   list-style: none;
+
 }
 
 .todo {
@@ -72,11 +74,6 @@ form button {
   padding: 0rem 0.5rem;
 }
 
-.fa-trash,
-.fa-check-circle {
-  pointer-events: none;
-}
-
 .done {
   opacity: 0.5; 
   background-color: #d3ffd3;
@@ -87,7 +84,7 @@ form button {
   opacity: 0;
 }
 
-.yoshi {
+.yochi {
   width: 200px; 
   height: auto; 
   display: block; 
@@ -120,14 +117,32 @@ form button {
   transition: background-color 0.3s ease, transform 0.3s ease; 
   margin-bottom: 10px;
   margin-right: 10px;
-}
-
-.done-btn:hover {
   background-color: #45a049; 
   transform: scale(1.05); 
+  outline: none; 
 }
 
-.done-btn:focus {
-  outline: none; 
+.todo-deadline {
+  margin-left: 0.5rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 2px solid black;
+  border-radius: 2rem;
+}
+
+.sort-options {
+  display: block; 
+  margin: 1rem auto; 
+  font-size: 1rem; 
+  border: 2px solid black; 
+  background: white; 
+  border-radius: 2rem; 
+  cursor: pointer; 
+  text-align: center;
+  transition: background-color 0.3s ease; 
+}
+
+.sort-options:hover {
+  background-color: rgb(195, 255, 252); 
 }
 

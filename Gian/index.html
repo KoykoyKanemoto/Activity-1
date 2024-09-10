@@ -9,11 +9,20 @@
   <body>
 
     <header>My To Do List</header>
-      <img class="yoshi" src="https://i.pinimg.com/originals/ba/41/e5/ba41e55daadb9370d883198e22437149.gif" >
+    <img class="yochi" src="https://i.pinimg.com/originals/ba/41/e5/ba41e55daadb9370d883198e22437149.gif">
+    
     <form action="">
       <input type="text" class="todo-input" placeholder="Add a new task...">
+      <input type="datetime-local" class="todo-deadline" placeholder="Set deadline">
       <button class="todo-button" type="submit">ADD</button>
     </form>
+
+    <select class="sort-options">
+      <option value="name">Sort by Name</option>
+      <option value="latest">Sort by Latest Date</option>
+      <option value="oldest">Sort by Oldest Date</option>
+  </select>
+  
 
     <div class="todo-container">
       <ul class="todo-list"></ul>
